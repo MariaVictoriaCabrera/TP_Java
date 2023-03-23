@@ -7,4 +7,14 @@ public class Pronostico {
 
     private ResultadosEnum resultado;
 
+    public Pronostico(Partido partido, Equipo equipo, ResultadosEnum resultado) {
+        this.partido = partido;
+        this.equipo = equipo;
+        this.resultado = resultado;
+    }
+
+//    public int puntos(){
+//        return ;
+//    }
+
 }
