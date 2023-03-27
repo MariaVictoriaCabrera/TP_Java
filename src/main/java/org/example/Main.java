@@ -11,9 +11,10 @@ public class Main {
 
         String rutaArchivo1 = "C:\\Users\\victo\\IdeaProjects\\TP_Entrega1_Grupo9\\src\\resultados.csv";
 
-        for (String linea : Files.readAllLines(Paths.get(rutaArchivo1))) {
+        String[] file = Files.readAllLines(Paths.get(rutaArchivo1)).toArray(new String[0]);
 
-            System.out.println(linea);
+        String [] renglon1= file[0].split(";");
+
+        System.out.println(renglon1[2]);
         }
     }
-}
