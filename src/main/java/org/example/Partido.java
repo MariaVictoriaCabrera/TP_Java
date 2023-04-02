@@ -15,10 +15,36 @@ public class Partido {
         this.golesEquipo2 = golesEquipo2;
     }
 
-//    public ResultadosEnum resultado(Equipo){
-//
-//       return resultado();
-//    }
+    public ResultadosEnum resultado(Equipo equipo) {
+        if (equipo.equals(equipo1)) {
+            if (golesEquipo1 > golesEquipo2) {
+                ResultadosEnum ganador = ResultadosEnum.GANADOR;
+                return ganador;
+            }
+        }
+        if (equipo.equals(equipo1)) {
+            if (golesEquipo1 < golesEquipo2) {
+                ResultadosEnum perdedor = ResultadosEnum.PERDEDOR;
+                return perdedor;
+            }
+        }
+        if (equipo.equals(equipo2)) {
+            if (golesEquipo1 < golesEquipo2) {
+                ResultadosEnum ganador = ResultadosEnum.GANADOR;
+                return ganador;
+            }
+        }
+        if (equipo.equals(equipo2)) {
+            if (golesEquipo1 > golesEquipo2) {
+                ResultadosEnum perdedor = ResultadosEnum.PERDEDOR;
+                return perdedor;
+            }
+        }
+        return null;
+    }
+
+
+
 
     public Equipo getEquipo1() {
         return equipo1;

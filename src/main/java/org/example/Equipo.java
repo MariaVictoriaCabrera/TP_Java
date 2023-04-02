@@ -4,10 +4,25 @@ public class Equipo {
 
     private String nombre;
     private String descripcion;
+    private int id;
 
-    public Equipo (String nombre, String descripcion){
+    public Equipo (int id, String nombre, String descripcion){
+        this.id=id;
         this.nombre=nombre;
         this.descripcion=descripcion;
     }
-     Equipo equipo1= new Equipo("Argentina", "Seleccionado");
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+
 }

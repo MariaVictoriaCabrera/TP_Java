@@ -5,16 +5,48 @@ public class Pronostico {
 
     private Equipo equipo;
 
-    private ResultadosEnum resultado;
+    private ResultadosEnum pronosticoResultado;
 
-    public Pronostico(Partido partido, Equipo equipo, ResultadosEnum resultado) {
+    public Pronostico(Partido partido, Equipo equipo, ResultadosEnum pronosticoResultado) {
         this.partido = partido;
         this.equipo = equipo;
-        this.resultado = resultado;
+        this.pronosticoResultado = pronosticoResultado;
     }
 
-//    public int puntos(){
-//        return ;
-//    }
+    public Partido getPartido() {
+        return partido;
+    }
+
+    public void setPartido(Partido partido) {
+        this.partido = partido;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+
+    public ResultadosEnum getpronosticoResultado() {
+        return pronosticoResultado;
+    }
+
+    public void setpronosticoResultado(ResultadosEnum pronosticoResultado) {
+        this.pronosticoResultado = pronosticoResultado;
+    }
+
+        public int puntos(){
+//        if pronostico=resulktado
+//           puntos ++
+            int puntos=0;
+            if(this.pronosticoResultado.equals(partido.resultado(this.equipo))) {
+                puntos++;
+                    return puntos;
+            }
+
+        return 0;
+    }
 
 }
