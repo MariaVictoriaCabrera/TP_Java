@@ -17,25 +17,16 @@ public class Pronostico {
         return partido;
     }
 
-    public void setPartido(Partido partido) {
-        this.partido = partido;
-    }
 
     public Equipo getEquipo() {
         return equipo;
     }
 
-    public void setEquipo(Equipo equipo) {
-        this.equipo = equipo;
-    }
 
     public ResultadosEnum getpronosticoResultado() {
         return pronosticoResultado;
     }
 
-    public void setpronosticoResultado(ResultadosEnum pronosticoResultado) {
-        this.pronosticoResultado = pronosticoResultado;
-    }
 
         public int puntos(){
 //        if pronostico=resulktado
@@ -45,7 +36,6 @@ public class Pronostico {
                 puntos++;
                     return puntos;
             }
-
         return 0;
     }
 

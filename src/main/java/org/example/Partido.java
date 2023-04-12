@@ -3,6 +3,7 @@ package org.example;
 public class Partido {
 
     private Equipo equipo1;
+
     private Equipo equipo2;
 
     private int golesEquipo1;
@@ -49,8 +50,19 @@ public class Partido {
     public Equipo getEquipo1() {
         return equipo1;
     }
+    public Equipo getEquipo2() {
+        return equipo2;
+    }
 
-    public void setEquipo1(Equipo equipo1) {
-        this.equipo1 = equipo1;
+    public int getGolesEquipo1() {
+        return golesEquipo1;
+    }
+
+    public int getGolesEquipo2() {
+        return golesEquipo2;
+    }
+
+    public String devolverDatos(){
+        return (equipo1.getNombre() + " " + golesEquipo1 + " " + equipo2.getNombre() + " " + golesEquipo2);
     }
 }
