@@ -28,7 +28,7 @@ public class Pronostico {
     }
 
 
-        public int puntos(){
+        public  int puntos(){
 //        if pronostico=resulktado
 //           puntos ++
             int puntos=0;

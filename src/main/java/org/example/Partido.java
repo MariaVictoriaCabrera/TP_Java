@@ -41,6 +41,9 @@ public class Partido {
                 return perdedor;
             }
         }
+        if(golesEquipo1==golesEquipo2){
+            return ResultadosEnum.EMPATE;
+        }
         return null;
     }
 
